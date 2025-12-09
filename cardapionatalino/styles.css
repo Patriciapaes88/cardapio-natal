@@ -1,0 +1,415 @@
+/* Paleta de cores natalinas 
+:root {
+  --red: #B3001B;
+  --green: #0E5A2A;
+  --gold: #C9A227;
+  --cream: #FFF5E6;
+  --text: #2B2B2B;
+}
+
+/* Reset básico 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #fff 0%, var(--cream) 100%);
+  color: var(--text);
+}
+
+/* Cabeçalho 
+.header {
+  padding: 28px 20px 12px;
+  text-align: center;
+  background: radial-gradient(circle at 10% -20%, rgba(201,162,39,0.2), transparent 50%),
+              radial-gradient(circle at 90% -20%, rgba(179,0,27,0.15), transparent 50%);
+  border-bottom: 4px double var(--gold);
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.brand-icon {
+  width: 180px;       /* aumenta bastante o tamanho 
+  height: 180px;
+  border-radius: 50%; /* mantém formato circular 
+  border: 5px solid var(--gold); /* borda dourada mais grossa 
+  box-shadow: 0 0 25px rgba(201,162,39,0.7); /* brilho dourado 
+  background: var(--cream); /* fundo claro para destacar 
+  padding: 8px; /* espaço interno 
+}
+
+
+.header h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, var(--red), var(--gold), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+/* Barra de ferramentas 
+.toolbar {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  justify-content: center;
+  background: var(--green);
+}
+
+.search input {
+  padding: 10px 12px;
+  width: 280px;
+  max-width: 90vw;
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  outline-color: var(--red);
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 8px 14px;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background: var(--red);
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all .2s ease;
+}
+
+.chip:hover {
+  background: var(--gold);
+  color: var(--red);
+}
+
+.chip.active {
+  background: var(--green);
+  color: #fff;
+}
+
+/* Grid de pratos 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+/* Quando só houver um card no grid 
+.grid:has(.card:only-child) {
+  justify-content: center;
+}
+
+.grid .card:only-child {
+  max-width: 320px;   /* largura máxima 
+  margin: 0 auto;     /* centraliza 
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--gold);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4/3;   /* mantém proporção fixa 
+  object-fit: cover;   /* preenche sem distorcer 
+  border-bottom: 2px solid var(--gold);
+}
+
+
+.card-content {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--red);
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.badge {
+  background: linear-gradient(90deg, var(--red), var(--gold));
+  color: #fff;
+  font-size: .75rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.desc {
+  font-size: .9rem;
+  color: #555;
+  min-height: 42px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.tag {
+  color: var(--gold);
+  font-size: .85rem;
+  font-style: italic;
+}
+
+/* Rodapé 
+.footer {
+  padding: 24px 20px;
+  text-align: center;
+  color: #fff;
+  background: var(--red);
+  border-top: 4px double var(--gold);
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsivo 
+@media (min-width: 900px) {
+  .search input { width: 360px; }
+  .card img { height: 200px; }
+}
+
+*/
+
+
+
+
+:root {
+  --red: #E10600;     /* vermelho vivo */
+  --green: #0FA958;   /* verde vibrante */
+  --gold: #FFD700;    /* dourado brilhante */
+  --cream: #FFF8DC;   /* creme suave */
+  --text: #2B2B2B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, var(--cream) 0%, #fff 50%, var(--cream) 100%);
+  color: var(--text);
+}
+
+/* Cabeçalho */
+.header {
+  padding: 28px 20px 12px;
+  text-align: center;
+  background: radial-gradient(circle at 10% -20%, rgba(255,215,0,0.3), transparent 50%),
+              radial-gradient(circle at 90% -20%, rgba(225,6,0,0.2), transparent 50%);
+  border-bottom: 4px double var(--gold);
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.brand-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--gold);
+  box-shadow: 0 0 25px rgba(255,215,0,0.7);
+  background: var(--cream);
+  padding: 8px;
+}
+
+.header h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.8rem;
+  background: linear-gradient(90deg, var(--red), var(--gold), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+}
+
+/* Títulos das seções */
+.section-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2rem;
+  color: var(--green);
+  text-align: center;
+  margin: 30px 0 10px;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 6px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--gold);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(225,6,0,0.3);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-bottom: 2px solid var(--gold);
+}
+
+.card-content {
+  padding: 14px;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--red);
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.desc {
+  font-size: .9rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.price {
+  color: var(--green);
+  font-weight: 700;
+}
+
+/* Rodapé */
+.footer {
+  padding: 24px 20px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(90deg, var(--red), var(--green));
+  border-top: 4px double var(--gold);
+  margin-top: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.notice {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.contact {
+  margin-top: 6px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* ============================= */
+/* Estilo especial para impressão */
+/* ============================= */
+@media print {
+ .card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;   /* todas ficam no mesmo formato */
+  object-fit: cover;     /* preenche sem distorcer */
+}
+ .card {
+    page-break-inside: avoid; /* impede que o card seja cortado */
+    break-inside: avoid;      /* compatibilidade */
+  }
+  .card-content {
+    padding: 10px;        /* mantém quadrado proporcional */
+  }
+
+  .desc {
+    font-size: 0.8rem;    /* texto compacto */
+    line-height: 1.2;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr; /* duas colunas fixas no PDF */
+    gap: 12px;
+  }
+
+  section {
+    page-break-before: always; /* cada seção em página separada */
+  }
+  section:first-of-type {
+    page-break-before: auto;
+  }
+}

@@ -1,0 +1,173 @@
+<!--DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cardápio Natalino</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <img src="guirlanda1.jpeg" alt="Guirlanda de Natal" class="brand-icon" />
+      <h1>🎄 Ceia de Natal 🎄 — Menu</h1>
+    </div>
+    <p class="subtitle">Sabor, afeto e brilho de fim de ano.</p>
+  </header>
+
+  <nav class="toolbar">
+    <div class="search">
+      <input id="searchInput" type="text" placeholder="Buscar por prato, ingrediente..." />
+    </div>
+    <div class="filters">
+      <button class="chip active" data-category="todos">Todos</button>
+      <button class="chip" data-category="entradas">Entradas</button>
+      <button class="chip" data-category="principais">Pratos principais</button>
+      <button class="chip" data-category="sobremesas">Sobremesas</button>
+      
+    </div>
+  </nav>
+
+  <main>
+    <section id="menuGrid" class="grid"></section>
+  </main>
+<footer class="footer">
+  <p>Cardápio especial de Natal • Campo Grande, MS</p>
+  <p class="notice">📌 Encomendas até dia 23 • Pagamento em PIX ou dinheiro</p>
+  <p class="contact">📞 Telefone/WhatsApp: (67) 99194-5074 • Feito por Ivonete</p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cardápio Natalino</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <img src="/img/guirlanda1.jpeg" alt="Guirlanda de Natal" class="brand-icon" />
+    </div>
+    <h1>🎄 Ceia de Natal 🎄 — Menu</h1>
+    <p class="subtitle">Sabor, afeto e brilho de fim de ano.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="section-title">Entradas</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="/img/salpicao.jpeg" alt="Salpicão natalino">
+          <div class="card-content">
+            <h3>Salpicão natalino</h3>
+            <p class="desc">Frango desfiado, legumes crocantes e toque de maçã verde.</p>
+            <span class="price">R$ 39,90</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/img/maionese.jpeg" alt="Salada de maionese">
+          <div class="card-content">
+            <h3>Salada de maionese</h3>
+            <p class="desc">Batata, cenoura, ervilha e maionese cremosa.</p>
+            <span class="price">R$ 29,90</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Pratos principais</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="/img/lasanha.jpeg" alt="Lasanha natalina">
+          <div class="card-content">
+            <h3>Lasanha natalina</h3>
+            <p class="desc">Lasanha recheada com molho especial e queijo gratinado.</p>
+            <span class="price">R$ 120,00</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/img/arroz_grega.jpeg" alt="Arroz à grega">
+          <div class="card-content">
+            <h3>Arroz à grega</h3>
+            <p class="desc">Arroz colorido com legumes frescos, passas e temperos especiais.</p>
+            <span class="price">R$ 45,00</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/img/farofa_agridoce.jpeg" alt="Farofa agridoce">
+          <div class="card-content">
+            <h3>Farofa agridoce</h3>
+            <p class="desc">Farofa crocante com frutas secas e toque agridoce.</p>
+            <span class="price">R$ 35,00</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/img/nhoque.jpeg" alt="Nhoque caseiro">
+          <div class="card-content">
+            <h3>Nhoque caseiro</h3>
+            <p class="desc">Nhoque macio servido com molho de tomate e manjericão.</p>
+            <span class="price">R$ 85,00</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/img/coxasobrecoxa.jpeg" alt="Coxa e sobrecoxa com bacon">
+          <div class="card-content">
+            <h3>Coxa e sobrecoxa com bacon</h3>
+            <p class="desc">Frango assado envolto em fatias de bacon crocante.</p>
+            <span class="price">R$ 99,00</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Sobremesas</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="/img/pudim.JPG" alt="Pudim">
+          <div class="card-content">
+            <h3>Pudim</h3>
+            <p class="desc">Clássico pudim de leite condensado com calda de caramelo.</p>
+            <span class="price">R$ 29,90</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/img/pave.jpeg" alt="Pavê">
+          <div class="card-content">
+            <h3>Pavê</h3>
+            <p class="desc">Camadas de biscoito, creme ou chocolate.</p>
+            <span class="price">R$ 45,00</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Cardápio especial de Natal • Campo Grande, MS</p>
+    <p class="notice">📌 Encomendas até dia 23 • Pagamento em PIX ou dinheiro</p>
+    <p class="contact">📞 Telefone/WhatsApp: (67) 99194-5074 • Feito por Ivonete</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
